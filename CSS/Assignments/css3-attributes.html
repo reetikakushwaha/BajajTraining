@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced CSS Selectors Example</title>
+  <style>
+    :root {
+      --main-color: #3f51b5;
+      --accent-color: #ff4081;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      padding: 20px;
+    }
+
+    p:empty {
+      background: #ffeaea;
+      border: 1px dashed red;
+      height: 30px;
+    }
+
+    button:not(.primary) {
+      background-color: lightgray;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .primary {
+      background-color: var(--main-color);
+      color: white;
+    }
+
+    ::selection {
+      background: var(--accent-color);
+      color: white;
+    }
+
+    a[href^="https"] {
+      color: green;
+      font-weight: bold;
+    }
+
+    a[href$=".pdf"] {
+      color: red;
+    }
+
+    a[href*="google"] {
+      color: blue;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Advanced CSS Selectors Demo</h2>
+
+  <p></p>
+  
+  <button>Default Button</button>
+  <button class="primary">Primary Button</button>
+
+  <br><br>
+
+  <a href="https://www.google.com">Google Link</a><br>
+  <a href="https://www.example.com/file.pdf">PDF File</a><br>
+  <a href="http://www.example.com">Non-HTTPS Link</a>
+
+  <p>Select some text to see ::selection effect!</p>
+
+</body>
+</html>

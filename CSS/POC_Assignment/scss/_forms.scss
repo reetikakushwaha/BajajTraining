@@ -1,0 +1,20 @@
+input {
+  float: left;
+  clear: left;
+  margin: 0.16em;
+  padding: 0.25em;
+  background-color: #ffbb77;
+  color: #432100;
+  border-color: #ff8811;
+  outline: 0;
+  border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+
+  &:invalid:focus {
+    background-color: rgba(67,33,0,0.22);
+  }
+}
+
+:required { background-color: #ffeddb; }
+:valid { background-color: #ffffff; }
+:not([type=submit]):optional { border-style: dashed; }

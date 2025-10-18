@@ -1,0 +1,23 @@
+body {
+  color: #432100;
+  padding-top: 1em;
+  background-repeat: no-repeat;
+  font-family: DJ, BajajDjFont, Arial, Helvetica, sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+
+a {
+  color: #aa8d00;
+  text-decoration: none;
+
+  &:hover {
+    color: #0055aa;
+  }
+}
+
+::selection {
+  background-color: #ff8811;
+  color: #ffffff;
+}

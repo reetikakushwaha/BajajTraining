@@ -1,0 +1,28 @@
+$primary-color: #9926f0;
+$secondary-color: #000000;
+$pink: #d122e3;
+
+h1{
+    color: $primary-color;
+}
+h6{
+    color: $secondary-color;
+}
+
+h1,h2,h3,h4,h5,h6{
+    background: linear-gradient(to right, rgba($secondary-color, .70), rgba($pink, .70));
+}
+
+.primary-button {
+    background: linear-gradient(to right, rgba($primary-color, 0.95), rgba($secondary-color, 0.95));
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    
+    &:hover{
+        background: linear-gradient(to right, rgba($secondary-color, 0.95), rgba($primary-color, 0.95));
+    }
+}

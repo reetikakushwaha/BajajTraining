@@ -1,0 +1,37 @@
+#topics {
+  ul {
+    // position: relative;
+    // height: 8em;
+    // width: 98.5%;
+    margin-top: 1em;
+    margin: 30px;
+    border-radius: 2em;
+    box-shadow: .5em .5em .5em #555555;
+    column-count: 3;
+    column-gap: 0;
+
+    li {
+      text-align: center;
+      padding: .5em;
+      cursor: crosshair;
+
+      &:nth-child(3n) { background-color: #ffbb77; }
+      &:nth-child(3n-1) { background-color: #ffd4a8; }
+      &:nth-child(3n-2) { background-color: #ffeddb; }
+
+      &:hover {
+        background-color: #432100;
+        color: #dcffdb;
+
+        p { display: inherit; color: #aa5500; }
+      }
+
+      h1 { font-size: 1em; }
+
+      &:nth-child(9):hover h1,
+      &:last-child:hover h1 {
+        transform: scale(2) skew(44deg, -4deg) rotate(180deg);
+      }
+    }
+  }
+}
